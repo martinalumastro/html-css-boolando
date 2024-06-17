@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+p, s, h1, h3 {
+    color: rgb(21, 21, 21);
+    font-style: normal;
+}
+
 ul, ol {
     list-style: none;
 }
@@ -15,6 +20,20 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col-33 {
+    width: calc(100% / 3);
+}
+
+.contaioner {
+    padding: 2px;
 }
 
 /*LAYOUT*/
@@ -37,7 +56,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    padding: 16px 2px;
 }
 .navbar-menu {
     display: flex;
@@ -52,4 +71,33 @@ img {
     justify-content: center;
     align-items: center;
     padding-top: 80px;
+    padding-bottom: 24px;
+}
+
+.gallery {
+    padding: 8px;
+}
+
+
+.card {
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.description-dress {
+    padding: 8px 16px;
+}
+
+.brand-dress, .price-dress {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.price-dress {
+    color: rgb(255, 0, 0);
+}
+
+.name-dress {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
